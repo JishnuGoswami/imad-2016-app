@@ -29,7 +29,7 @@ app.get('/ui/madi.png',function( req, res){
     res.sendFile(path.join(__dirname,'ui','madi.png'));
     });
     
- app.get('/article-fuck you ',function(req,res){
+ app.get('/article-fuckyou ',function(req,res){
     res.send('article fuck you is requested and will be served here');
 });   
 
