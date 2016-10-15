@@ -14,29 +14,21 @@ app.get('/article one', function (req,res){
 });
 
 
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
 
 app.get('/article two',function (req,res){
     res.send('article two is requested and will be served');
 });
 
-
-
 app.get('/article-two', function (req,res){
    res.send('article-two is requested and wil be served'); 
 });
 
-
 app.get('/article three', function (req,res){
     res.send('article three is requested and will be served');
 });
-
-
-
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
