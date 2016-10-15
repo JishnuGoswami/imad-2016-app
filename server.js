@@ -21,7 +21,7 @@ app.get('/article.two',function(req,res){
     res.send('article two is requested and will be served here');
 });
 app.get('/ui/madi.png',function( req, res){
-    res.sendFile(path.join(_dirname,'ui','madi.png'));
+    res.sendFile(path.join(__dirname,'ui','madi.png'));
     });
 app.get('/article.two',function(req,res){
     res.send('article two is requested and will be served here');
